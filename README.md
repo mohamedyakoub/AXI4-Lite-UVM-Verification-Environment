@@ -15,7 +15,7 @@ This repository contains a complete UVM-based verification environment for an **
 - 🧪 Support for concurrent transactions (within AXI-Lite limits)
 
 ## 📁 Project Structure
-
+```
 axi4lite_uvm_tb/
 ├── src/ # DUT source files (e.g., axil_ram.v)
 ├── tb/ # Testbench files
@@ -32,7 +32,7 @@ axi4lite_uvm_tb/
 ├── sim/ # Simulation files (compile/run scripts)
 ├── docs/ # Documentation and waveform captures
 └── README.md # You’re here
-
+```
 ## ⚙️ How to Run
 
 1. **Clone the repo:**
