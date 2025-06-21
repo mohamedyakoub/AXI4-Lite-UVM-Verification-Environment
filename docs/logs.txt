@@ -1,0 +1,1498 @@
+# vsim -voptargs="+acc" work.tb -coverage "+UVM_TESTNAME=AXI4_concurrent_test" -sv_seed random "+UVM_VERBOSITY=UVM_LOW" -l ../docs/logs.txt 
+# Start time: 21:17:35 on Jun 20,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.AXI4_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.AXI4_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.AXI4_if(fast__2)
+# Loading work.axil_ram(fast)
+# Loading work.AXI4_Assertions(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 's_axil_awaddr'. The port definition is at: ../tb/Env/AXI4_Assertions.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/assertions_inst File: ../tb/Env/tb.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 's_axil_araddr'. The port definition is at: ../tb/Env/AXI4_Assertions.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/assertions_inst File: ../tb/Env/tb.sv Line: 56
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 441773925
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test AXI4_concurrent_test...
+# UVM_INFO ../tb/Env/../Tests/Virtual_seq.sv(15) @ 0: uvm_test_top.env.virt_seqr@@vseq [AXI4_concurrent_seq] virtual_seq: Inside Body
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(24) @ 0: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(24) @ 5000: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# ** Error: Assertion error.
+#    Time: 38795 ns Started: 38765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 62365 ns Started: 62335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 64595 ns Started: 64565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 81335 ns Started: 81305 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 81675 ns Started: 81645 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 97865 ns Started: 97825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 99545 ns Started: 99515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 118125 ns Started: 118095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 211695 ns Started: 211665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 224285 ns Started: 224255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 243245 ns Started: 243215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 247895 ns Started: 247865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 269445 ns Started: 269405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 282585 ns Started: 282545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 289065 ns Started: 289035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 295405 ns Started: 295375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 295435 ns Started: 295405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 295585 ns Started: 295555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 301455 ns Started: 301415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 319195 ns Started: 319165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 321125 ns Started: 321095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 330015 ns Started: 329985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 330385 ns Started: 330355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 334745 ns Started: 334715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 337745 ns Started: 337705 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 347965 ns Started: 347935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 353375 ns Started: 353345 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 361065 ns Started: 361035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 365365 ns Started: 365335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 366305 ns Started: 366275 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 388365 ns Started: 388335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 388845 ns Started: 388815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 391075 ns Started: 391035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 391215 ns Started: 391185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 398905 ns Started: 398875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 406285 ns Started: 406235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 412175 ns Started: 412145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 414965 ns Started: 414935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 423515 ns Started: 423485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 428385 ns Started: 428355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 432715 ns Started: 432685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 433625 ns Started: 433595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 433795 ns Started: 433765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 434415 ns Started: 434385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 434445 ns Started: 434415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 435455 ns Started: 435425 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 438365 ns Started: 438335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 454415 ns Started: 454325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 464775 ns Started: 464745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 467815 ns Started: 467775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 472625 ns Started: 472595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 474205 ns Started: 474175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 475305 ns Started: 475275 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 486345 ns Started: 486315 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 486995 ns Started: 486965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 493195 ns Started: 493165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 493755 ns Started: 493725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 496755 ns Started: 496725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 511775 ns Started: 511745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 512235 ns Started: 512205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 518315 ns Started: 518285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 525815 ns Started: 525785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 526945 ns Started: 526915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 530575 ns Started: 530545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 534215 ns Started: 534185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 543545 ns Started: 543515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 544115 ns Started: 544085 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 555285 ns Started: 555255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 564085 ns Started: 564055 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 568515 ns Started: 568485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 571915 ns Started: 571885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 580795 ns Started: 580765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 583365 ns Started: 583335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 585175 ns Started: 585145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 585465 ns Started: 585425 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 592035 ns Started: 592005 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 593385 ns Started: 593355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 593605 ns Started: 593555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 599015 ns Started: 598985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 599885 ns Started: 599855 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 600295 ns Started: 600265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 600985 ns Started: 600955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 604465 ns Started: 604435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 607405 ns Started: 607375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 611695 ns Started: 611655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 613825 ns Started: 613795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 615355 ns Started: 615325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 618375 ns Started: 618335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 619985 ns Started: 619955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 622235 ns Started: 622205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 635985 ns Started: 635955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 638585 ns Started: 638555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 643855 ns Started: 643825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 645185 ns Started: 645155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 649465 ns Started: 649435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 653455 ns Started: 653425 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 657065 ns Started: 657035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 669825 ns Started: 669795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 677225 ns Started: 677195 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 680775 ns Started: 680745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 682025 ns Started: 681995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 694315 ns Started: 694285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 695845 ns Started: 695815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 698685 ns Started: 698655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 698935 ns Started: 698905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 699055 ns Started: 699025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 700365 ns Started: 700335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 701715 ns Started: 701685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 702555 ns Started: 702525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 703165 ns Started: 703135 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 703325 ns Started: 703295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 707605 ns Started: 707575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 708235 ns Started: 708205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 711325 ns Started: 711295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 721545 ns Started: 721505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 722955 ns Started: 722925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 731775 ns Started: 731745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 735995 ns Started: 735965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 738265 ns Started: 738235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 740195 ns Started: 740165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 742835 ns Started: 742795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 745765 ns Started: 745735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 747975 ns Started: 747945 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 750435 ns Started: 750405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 751125 ns Started: 751095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 753905 ns Started: 753875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 755825 ns Started: 755795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 763055 ns Started: 763025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 764305 ns Started: 764265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 764465 ns Started: 764415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 765795 ns Started: 765765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 770625 ns Started: 770595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 770745 ns Started: 770715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 777475 ns Started: 777445 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 777515 ns Started: 777475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 778105 ns Started: 778075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 779135 ns Started: 779105 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 783855 ns Started: 783825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 783995 ns Started: 783965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 787285 ns Started: 787215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 795125 ns Started: 795095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 795505 ns Started: 795475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 797525 ns Started: 797495 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 798785 ns Started: 798755 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 801205 ns Started: 801175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 804035 ns Started: 804005 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 804065 ns Started: 804035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 804515 ns Started: 804445 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 808855 ns Started: 808825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 810865 ns Started: 810835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 815065 ns Started: 815035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 820235 ns Started: 820205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 823185 ns Started: 823155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 830955 ns Started: 830925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 831385 ns Started: 831355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 831565 ns Started: 831535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 832305 ns Started: 832275 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 839575 ns Started: 839545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 843845 ns Started: 843815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 856165 ns Started: 856135 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 861815 ns Started: 861785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 864335 ns Started: 864305 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 870465 ns Started: 870405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 872315 ns Started: 872285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 874855 ns Started: 874825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 875865 ns Started: 875835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 876205 ns Started: 876175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 889745 ns Started: 889715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 890545 ns Started: 890515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 893825 ns Started: 893795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 896555 ns Started: 896495 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 897475 ns Started: 897445 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 901415 ns Started: 901385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 906205 ns Started: 906165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 906945 ns Started: 906865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 917745 ns Started: 917715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 920435 ns Started: 920405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 927875 ns Started: 927845 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 929185 ns Started: 929145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 930575 ns Started: 930545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 940925 ns Started: 940885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 950985 ns Started: 950955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 951405 ns Started: 951375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 962985 ns Started: 962955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 966485 ns Started: 966435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 968445 ns Started: 968385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 969015 ns Started: 968985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 974555 ns Started: 974525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 975425 ns Started: 975395 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 976555 ns Started: 976525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 977925 ns Started: 977885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 982475 ns Started: 982445 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 983295 ns Started: 983245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 984335 ns Started: 984305 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 984695 ns Started: 984665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 984725 ns Started: 984695 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 989565 ns Started: 989535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 989635 ns Started: 989605 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 992355 ns Started: 992325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 994005 ns Started: 993965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 997945 ns Started: 997915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1004465 ns Started: 1004435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1010895 ns Started: 1010865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1013905 ns Started: 1013875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1021725 ns Started: 1021695 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1022905 ns Started: 1022875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1023985 ns Started: 1023955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1027805 ns Started: 1027775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1029745 ns Started: 1029705 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1035565 ns Started: 1035535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1035985 ns Started: 1035955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1037545 ns Started: 1037515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1038565 ns Started: 1038535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1038825 ns Started: 1038795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1040445 ns Started: 1040415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1042265 ns Started: 1042235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1046065 ns Started: 1046015 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1050015 ns Started: 1049985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1052805 ns Started: 1052775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1055015 ns Started: 1054985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1055645 ns Started: 1055615 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1057145 ns Started: 1057115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1067725 ns Started: 1067695 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1070435 ns Started: 1070405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1074945 ns Started: 1074915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1076255 ns Started: 1076205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1076525 ns Started: 1076495 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1077935 ns Started: 1077905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1078825 ns Started: 1078795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1078965 ns Started: 1078935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1081645 ns Started: 1081575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1082515 ns Started: 1082485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1082945 ns Started: 1082915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1084905 ns Started: 1084865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1088685 ns Started: 1088655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1092785 ns Started: 1092755 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1093455 ns Started: 1093425 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1094975 ns Started: 1094935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1096265 ns Started: 1096235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1099315 ns Started: 1099285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1099585 ns Started: 1099555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1101375 ns Started: 1101345 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1102605 ns Started: 1102575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1102795 ns Started: 1102745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1103295 ns Started: 1103265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1107745 ns Started: 1107715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1109485 ns Started: 1109455 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1114515 ns Started: 1114485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1115665 ns Started: 1115635 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1126005 ns Started: 1125975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1129355 ns Started: 1129325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1129575 ns Started: 1129545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1131235 ns Started: 1131205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1131515 ns Started: 1131485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1131815 ns Started: 1131785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1133505 ns Started: 1133445 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1133625 ns Started: 1133595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1134145 ns Started: 1134115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1136135 ns Started: 1136105 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1137545 ns Started: 1137515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1141545 ns Started: 1141515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1143535 ns Started: 1143505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1144635 ns Started: 1144605 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1144675 ns Started: 1144635 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1145215 ns Started: 1145185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1147265 ns Started: 1147235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1147295 ns Started: 1147265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1150995 ns Started: 1150965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1154835 ns Started: 1154805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1155755 ns Started: 1155725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1159055 ns Started: 1159025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1160925 ns Started: 1160895 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1161655 ns Started: 1161585 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1162445 ns Started: 1162415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1163165 ns Started: 1163135 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1164465 ns Started: 1164435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1166045 ns Started: 1166015 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1166705 ns Started: 1166655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1169405 ns Started: 1169365 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1174755 ns Started: 1174725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1178555 ns Started: 1178525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1179065 ns Started: 1179035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1184615 ns Started: 1184535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1185185 ns Started: 1185155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1185915 ns Started: 1185885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1186585 ns Started: 1186555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1191015 ns Started: 1190985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1191325 ns Started: 1191295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1192545 ns Started: 1192485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1195705 ns Started: 1195665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1197695 ns Started: 1197665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1205105 ns Started: 1205075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1206835 ns Started: 1206805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1209155 ns Started: 1209125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1209935 ns Started: 1209905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1210825 ns Started: 1210785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1212225 ns Started: 1212195 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1214065 ns Started: 1214025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1214655 ns Started: 1214615 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1214765 ns Started: 1214735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1214975 ns Started: 1214945 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1215305 ns Started: 1215275 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1215465 ns Started: 1215435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1217285 ns Started: 1217255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1217845 ns Started: 1217805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1218625 ns Started: 1218595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1222225 ns Started: 1222185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1225275 ns Started: 1225245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1227605 ns Started: 1227575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1232065 ns Started: 1232035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1232975 ns Started: 1232945 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1236755 ns Started: 1236725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1238295 ns Started: 1238265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1240045 ns Started: 1240015 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1244145 ns Started: 1244115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1249025 ns Started: 1248995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1249725 ns Started: 1249695 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1251115 ns Started: 1251085 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1251245 ns Started: 1251215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1251575 ns Started: 1251545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1252255 ns Started: 1252225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1253915 ns Started: 1253865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1258845 ns Started: 1258785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1260855 ns Started: 1260825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1263275 ns Started: 1263245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1264625 ns Started: 1264565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1265655 ns Started: 1265625 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1267025 ns Started: 1266995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1268435 ns Started: 1268405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1268865 ns Started: 1268835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1271735 ns Started: 1271705 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1273265 ns Started: 1273235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1278035 ns Started: 1277995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1288575 ns Started: 1288545 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1288945 ns Started: 1288915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1290675 ns Started: 1290645 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1294015 ns Started: 1293985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1294435 ns Started: 1294405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1302255 ns Started: 1302225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1303685 ns Started: 1303655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1316675 ns Started: 1316645 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1322605 ns Started: 1322575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1323115 ns Started: 1323075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1323755 ns Started: 1323725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1325065 ns Started: 1325035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1327245 ns Started: 1327215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1333965 ns Started: 1333935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1341755 ns Started: 1341725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1343935 ns Started: 1343905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1349445 ns Started: 1349415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1349835 ns Started: 1349805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1350915 ns Started: 1350885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1351165 ns Started: 1351135 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1354765 ns Started: 1354735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1355285 ns Started: 1355255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1363635 ns Started: 1363605 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1364985 ns Started: 1364955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1367715 ns Started: 1367685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1368945 ns Started: 1368915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1370695 ns Started: 1370665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1375905 ns Started: 1375875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1376945 ns Started: 1376915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# Sequence completed with 30000 items
+# ** Error: Assertion error.
+#    Time: 1385825 ns Started: 1385795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1386805 ns Started: 1386775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1389025 ns Started: 1388995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1392635 ns Started: 1392595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1401625 ns Started: 1401595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1402595 ns Started: 1402565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1402865 ns Started: 1402835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1404145 ns Started: 1404115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1407645 ns Started: 1407615 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1409815 ns Started: 1409785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1410665 ns Started: 1410635 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1411365 ns Started: 1411335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1412065 ns Started: 1412035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1415135 ns Started: 1415105 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1416355 ns Started: 1416325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1416485 ns Started: 1416455 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1417005 ns Started: 1416975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1417185 ns Started: 1417155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1417855 ns Started: 1417825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1424065 ns Started: 1424015 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1426335 ns Started: 1426305 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1427605 ns Started: 1427575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1428695 ns Started: 1428665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1432315 ns Started: 1432285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1438855 ns Started: 1438825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1439965 ns Started: 1439905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1441185 ns Started: 1441145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1448435 ns Started: 1448405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1450005 ns Started: 1449975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1451095 ns Started: 1451065 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1451155 ns Started: 1451125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1452105 ns Started: 1452075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1452145 ns Started: 1452105 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1455355 ns Started: 1455295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1459765 ns Started: 1459735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1459885 ns Started: 1459855 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1464435 ns Started: 1464405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1468125 ns Started: 1468095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1470895 ns Started: 1470865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1471055 ns Started: 1471025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1471765 ns Started: 1471735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1471975 ns Started: 1471925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1479115 ns Started: 1479085 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1481245 ns Started: 1481215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1482205 ns Started: 1482175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1483315 ns Started: 1483285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1484925 ns Started: 1484895 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1484975 ns Started: 1484925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1485765 ns Started: 1485735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1491685 ns Started: 1491655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1491775 ns Started: 1491745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1495265 ns Started: 1495235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1495995 ns Started: 1495965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1496305 ns Started: 1496255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1498605 ns Started: 1498565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1504505 ns Started: 1504455 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1508555 ns Started: 1508505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1511285 ns Started: 1511255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1513215 ns Started: 1513185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1521515 ns Started: 1521485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1521865 ns Started: 1521835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1523155 ns Started: 1523125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1528095 ns Started: 1528065 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1528595 ns Started: 1528565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1529715 ns Started: 1529685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1533555 ns Started: 1533505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1535245 ns Started: 1535205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1535695 ns Started: 1535665 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1536055 ns Started: 1536025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1538465 ns Started: 1538435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1543855 ns Started: 1543825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1547685 ns Started: 1547655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1547805 ns Started: 1547775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1548515 ns Started: 1548485 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1551165 ns Started: 1551125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1552815 ns Started: 1552785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1553535 ns Started: 1553505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1568465 ns Started: 1568435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1569005 ns Started: 1568975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1572245 ns Started: 1572205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1572495 ns Started: 1572465 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1575185 ns Started: 1575155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1576545 ns Started: 1576505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1578435 ns Started: 1578405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1578845 ns Started: 1578815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1588325 ns Started: 1588285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1589685 ns Started: 1589655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1590375 ns Started: 1590335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1592685 ns Started: 1592655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1596175 ns Started: 1596125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1598845 ns Started: 1598815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1600655 ns Started: 1600625 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1607865 ns Started: 1607825 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1608105 ns Started: 1608075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1608705 ns Started: 1608675 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1620845 ns Started: 1620815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1621205 ns Started: 1621175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1623625 ns Started: 1623595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1627355 ns Started: 1627325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1630595 ns Started: 1630565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1632105 ns Started: 1632075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1633965 ns Started: 1633935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1634915 ns Started: 1634885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1636285 ns Started: 1636255 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1639845 ns Started: 1639815 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1644795 ns Started: 1644765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1645415 ns Started: 1645385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1646715 ns Started: 1646685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1646885 ns Started: 1646855 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1647435 ns Started: 1647405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1651465 ns Started: 1651435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1651705 ns Started: 1651675 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1652325 ns Started: 1652295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1652525 ns Started: 1652475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1652585 ns Started: 1652555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1654485 ns Started: 1654455 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1659175 ns Started: 1659145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1659225 ns Started: 1659175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1664585 ns Started: 1664555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1667275 ns Started: 1667245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1668555 ns Started: 1668525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1671315 ns Started: 1671285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1675875 ns Started: 1675845 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1677025 ns Started: 1676995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1678595 ns Started: 1678555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1679085 ns Started: 1679055 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1686585 ns Started: 1686555 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1689155 ns Started: 1689125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1689185 ns Started: 1689155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1689215 ns Started: 1689185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1689265 ns Started: 1689215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1689445 ns Started: 1689415 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1690045 ns Started: 1690015 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1694385 ns Started: 1694355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1701895 ns Started: 1701855 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1703595 ns Started: 1703565 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1705605 ns Started: 1705575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1706495 ns Started: 1706465 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1710495 ns Started: 1710465 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1713265 ns Started: 1713235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1714195 ns Started: 1714165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1727235 ns Started: 1727205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1727905 ns Started: 1727875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1728055 ns Started: 1728025 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1737155 ns Started: 1737125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1738785 ns Started: 1738755 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1739055 ns Started: 1738985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1741245 ns Started: 1741215 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1742155 ns Started: 1742095 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1742415 ns Started: 1742365 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1745905 ns Started: 1745875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1746795 ns Started: 1746765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1750855 ns Started: 1750805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1760395 ns Started: 1760365 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1760865 ns Started: 1760835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1760935 ns Started: 1760905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1769435 ns Started: 1769405 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1769755 ns Started: 1769725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1770825 ns Started: 1770785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1771275 ns Started: 1771225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1775205 ns Started: 1775165 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1779525 ns Started: 1779495 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1783265 ns Started: 1783235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1783645 ns Started: 1783615 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1783675 ns Started: 1783645 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1795205 ns Started: 1795175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1796505 ns Started: 1796475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1801105 ns Started: 1801075 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1804415 ns Started: 1804385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1805535 ns Started: 1805505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1806345 ns Started: 1806315 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1807505 ns Started: 1807465 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1812355 ns Started: 1812325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1814175 ns Started: 1814145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1816405 ns Started: 1816375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1821635 ns Started: 1821595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1826865 ns Started: 1826835 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1828465 ns Started: 1828435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1828955 ns Started: 1828925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1831685 ns Started: 1831655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1834325 ns Started: 1834295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1837765 ns Started: 1837705 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1837905 ns Started: 1837875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1840465 ns Started: 1840435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1848775 ns Started: 1848725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1849765 ns Started: 1849735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1852705 ns Started: 1852675 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1852905 ns Started: 1852875 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1854175 ns Started: 1854145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1854925 ns Started: 1854895 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1856435 ns Started: 1856385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1859205 ns Started: 1859175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1861355 ns Started: 1861325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1863695 ns Started: 1863655 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1866145 ns Started: 1866115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1867735 ns Started: 1867705 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1868825 ns Started: 1868795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1870525 ns Started: 1870475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1871715 ns Started: 1871685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1871985 ns Started: 1871955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1872965 ns Started: 1872935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1877325 ns Started: 1877295 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1878175 ns Started: 1878145 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1878315 ns Started: 1878285 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1879995 ns Started: 1879965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1884815 ns Started: 1884785 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1884965 ns Started: 1884935 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1886235 ns Started: 1886205 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1894015 ns Started: 1893985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1896295 ns Started: 1896265 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1896545 ns Started: 1896515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1897775 ns Started: 1897745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1898715 ns Started: 1898685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1903275 ns Started: 1903245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1906535 ns Started: 1906505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1907915 ns Started: 1907885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1908655 ns Started: 1908625 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1909935 ns Started: 1909905 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1913915 ns Started: 1913885 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1915375 ns Started: 1915345 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1915955 ns Started: 1915925 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1919255 ns Started: 1919225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1926555 ns Started: 1926525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1927335 ns Started: 1927305 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1927405 ns Started: 1927375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1932065 ns Started: 1932035 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1932145 ns Started: 1932115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1932405 ns Started: 1932345 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1933015 ns Started: 1932985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1935405 ns Started: 1935355 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1935605 ns Started: 1935575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1935805 ns Started: 1935775 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1936675 ns Started: 1936645 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1938035 ns Started: 1937985 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1940915 ns Started: 1940865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1948625 ns Started: 1948575 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1951415 ns Started: 1951385 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1952765 ns Started: 1952735 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1953275 ns Started: 1953245 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1955505 ns Started: 1955465 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1956755 ns Started: 1956725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1958155 ns Started: 1958125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1959985 ns Started: 1959955 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1960145 ns Started: 1960085 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1960235 ns Started: 1960185 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1960865 ns Started: 1960795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1963005 ns Started: 1962975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1968725 ns Started: 1968695 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1971405 ns Started: 1971375 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1980665 ns Started: 1980625 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1984305 ns Started: 1984275 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1985365 ns Started: 1985325 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1986785 ns Started: 1986755 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1989115 ns Started: 1989085 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1989145 ns Started: 1989115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1990755 ns Started: 1990725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1991785 ns Started: 1991755 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1992085 ns Started: 1992055 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 1997775 ns Started: 1997745 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2002795 ns Started: 2002765 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2004185 ns Started: 2004155 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2007565 ns Started: 2007535 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2011995 ns Started: 2011965 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2012025 ns Started: 2011995 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2018255 ns Started: 2018225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2025395 ns Started: 2025365 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2026895 ns Started: 2026865 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2028365 ns Started: 2028335 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2029835 ns Started: 2029805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2031495 ns Started: 2031455 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2032545 ns Started: 2032515 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2034145 ns Started: 2034115 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2034835 ns Started: 2034795 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2040275 ns Started: 2040225 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2043005 ns Started: 2042975 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2043725 ns Started: 2043685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2043765 ns Started: 2043725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2044525 ns Started: 2044495 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2047535 ns Started: 2047505 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2048945 ns Started: 2048915 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2050525 ns Started: 2050475 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2050625 ns Started: 2050595 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2050715 ns Started: 2050685 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2050745 ns Started: 2050715 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2058175 ns Started: 2058125 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2058765 ns Started: 2058725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2059835 ns Started: 2059805 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2063205 ns Started: 2063175 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2066265 ns Started: 2066235 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2068755 ns Started: 2068725 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2071085 ns Started: 2071055 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2073465 ns Started: 2073435 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# ** Error: Assertion error.
+#    Time: 2075555 ns Started: 2075525 ns  Scope: tb.DUT.assertions_inst.stable_rdata_assertion File: ../tb/Env/AXI4_Assertions.sv Line: 79
+# Sequence completed with 30000 items
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2078975000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(128) @ 2078975000: uvm_test_top.env.agent.write_agent.driver [report_phase] *************AXI4_Write_Driver**************************
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(129) @ 2078975000: uvm_test_top.env.agent.write_agent.driver [report_phase] total number of Address count : 13494
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(130) @ 2078975000: uvm_test_top.env.agent.write_agent.driver [report_phase] ******************************************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(82) @ 2078975000: uvm_test_top.env.scb [report_phase] *************AXI4_Scoreboard**************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(83) @ 2078975000: uvm_test_top.env.scb [report_phase] total number of transactions: 40464
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(84) @ 2078975000: uvm_test_top.env.scb [report_phase] total number of read transactions: 26970
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(85) @ 2078975000: uvm_test_top.env.scb [report_phase] total number of write transactions: 13494
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(87) @ 2078975000: uvm_test_top.env.scb [report_phase] total succesful transactions: 26970
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(88) @ 2078975000: uvm_test_top.env.scb [report_phase] total failled transactions: 0
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(89) @ 2078975000: uvm_test_top.env.scb [report_phase] ******************************************************
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AXI4_Scoreboard]     2
+# [AXI4_concurrent_seq]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [report_phase]    10
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2078975 ns  Iteration: 69  Instance: /tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 21:19:11 on Jun 20,2025
+# vcover report tb.ucdb -details -annotate -all -output ../docs/coverage_rpt.txt 
+# End time: 21:19:11 on Jun 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:20:33 on Jun 20,2025
+# vlog -reportprogress 300 ../interface/AXI4_Interface.sv ../tb/Env/AXI4_Assertions.sv ../rtl/axil_ram.v ../tb/Env/AXI4_pkg.sv ../tb/Env/tb.sv "+cover" "+fcover" 
+# -- Compiling interface AXI4_if
+# -- Compiling module AXI4_Assertions
+# -- Compiling module axil_ram
+# -- Compiling package AXI4_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) ../tb/Env/AXI4_pkg.sv(3): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# ** Warning: ../tb/Env/AXI4_write_monitor.sv(90): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: ../tb/Env/AXI4_write_monitor.sv(91): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# ** Warning: ../tb/Env/AXI4_read_monitor.sv(63): (vlog-2240) Treating stand-alone use of function 'pop_front' as an implicit VOID cast.
+# -- Compiling package tb_sv_unit
+# -- Importing package AXI4_pkg
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 21:20:33 on Jun 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+# Saving coverage database on exit...
+# End time: 21:21:14 on Jun 20,2025, Elapsed time: 0:03:39
+# Errors: 655, Warnings: 3
+# vsim -voptargs="+acc" work.tb -coverage "+UVM_TESTNAME=AXI4_concurrent_test" -sv_seed random "+UVM_VERBOSITY=UVM_LOW" -l ../docs/logs.txt 
+# Start time: 21:21:15 on Jun 20,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.AXI4_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.AXI4_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.AXI4_if(fast__2)
+# Loading work.axil_ram(fast)
+# Loading work.AXI4_Assertions(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 's_axil_awaddr'. The port definition is at: ../tb/Env/AXI4_Assertions.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/assertions_inst File: ../tb/Env/tb.sv Line: 56
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (16) for port 's_axil_araddr'. The port definition is at: ../tb/Env/AXI4_Assertions.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/DUT/assertions_inst File: ../tb/Env/tb.sv Line: 56
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 901054409
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test AXI4_concurrent_test...
+# UVM_INFO ../tb/Env/../Tests/Virtual_seq.sv(15) @ 0: uvm_test_top.env.virt_seqr@@vseq [AXI4_concurrent_seq] virtual_seq: Inside Body
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(24) @ 0: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(24) @ 5000: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# Sequence completed with 30000 items
+# Sequence completed with 30000 items
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2070475000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(128) @ 2070475000: uvm_test_top.env.agent.write_agent.driver [report_phase] *************AXI4_Write_Driver**************************
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(129) @ 2070475000: uvm_test_top.env.agent.write_agent.driver [report_phase] total number of Address count : 13487
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(130) @ 2070475000: uvm_test_top.env.agent.write_agent.driver [report_phase] ******************************************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(82) @ 2070475000: uvm_test_top.env.scb [report_phase] *************AXI4_Scoreboard**************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(83) @ 2070475000: uvm_test_top.env.scb [report_phase] total number of transactions: 40434
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(84) @ 2070475000: uvm_test_top.env.scb [report_phase] total number of read transactions: 26947
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(85) @ 2070475000: uvm_test_top.env.scb [report_phase] total number of write transactions: 13487
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(87) @ 2070475000: uvm_test_top.env.scb [report_phase] total succesful transactions: 26947
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(88) @ 2070475000: uvm_test_top.env.scb [report_phase] total failled transactions: 0
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(89) @ 2070475000: uvm_test_top.env.scb [report_phase] ******************************************************
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AXI4_Scoreboard]     2
+# [AXI4_concurrent_seq]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [report_phase]    10
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2070475 ns  Iteration: 70  Instance: /tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 21:22:49 on Jun 20,2025
+# vcover report tb.ucdb -details -annotate -all -output ../docs/coverage_rpt.txt 
+# End time: 21:22:49 on Jun 20,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
