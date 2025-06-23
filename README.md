@@ -17,20 +17,52 @@ This repository contains a complete UVM-based verification environment for an **
 ## 📁 Project Structure
 ```
 axi4lite_uvm_tb/
-├── src/ # DUT source files (e.g., axil_ram.v)
+├── src/ # DUT source files
+│   └── axil_ram.v
 ├── tb/ # Testbench files
-│ ├── axi4_write_driver.sv
-│ ├── axi4_read_driver.sv
-│ ├── axi4_monitors.sv
-│ ├── axi4_scoreboard.sv
-│ ├── axi4_seq_item.sv
-│ ├── axi4_sequences.sv
-│ ├── axi4_environment.sv
-│ └── axi4_test.sv
+│   ├── Env/
+│   │   ├── AXI4_agent.sv
+│   │   ├── AXI4_Assertions.sv
+│   │   ├── AXI4_cfg.sv
+│   │   ├── AXI4_environment.sv
+│   │   ├── AXI4_pkg.sv
+│   │   ├── AXI4_read_agent.sv
+│   │   ├── AXI4_read_cov.sv
+│   │   ├── AXI4_read_driver.sv
+│   │   ├── AXI4_read_monitor.sv
+│   │   ├── AXI4_scoreboard.sv
+│   │   ├── AXI4_seq_item.sv
+│   │   ├── AXI4_sequencer.sv
+│   │   ├── AXI4_write_agent.sv
+│   │   ├── AXI4_write_cov.sv
+│   │   ├── AXI4_write_driver.sv
+│   │   ├── AXI4_write_monitor.sv
+│   │   └── tb.sv
+│   ├── Tests/
+│   │   ├── AXI4_ideal_seq.sv
+│   │   ├── AXI4_seq.sv
+│   │   ├── AXI4_test.sv
+│   │   ├── Concurrent_Seq.sv
+│   │   ├── Concurrent_Test.sv
+│   │   ├── Virtual_seq.sv
+│   │   ├── virtual_seqr.sv
+│   │   ├── Write_Read_Seq.sv
+│   └── └── Write_Read_Test.sv
 ├── interface/ # Virtual interface definitions
-│ └── axi4_if.sv
+│   └── axi4_if.sv
 ├── sim/ # Simulation files (compile/run scripts)
-├── docs/ # Documentation and waveform captures
+│   └── run.do
+├── docs/                            # Documentation and simulation output
+│   ├── Concurrent_Test_Ideal.jpg      # Logs and waveform snapshots for ideal scenarios
+│   ├── Concurrent_Test_Ideal_log.jpg      # Logs and waveform snapshots for ideal scenarios
+│   ├── Concurrent_Test_Non_Ideal.jpg  # Non-ideal  logs
+│   ├── Concurrent_Test_Non_Ideal_log.jpg  # Non-ideal  logs
+│   ├── Read_Ideal.jpg                     # Waveform snapshot for ideal read transaction
+│   ├── Write_Ideal.jpg                    # Waveform snapshot for ideal write transaction
+│   ├── Write_Read_Ideal_log.jpg               # Waveform snapshot for mixed transaction
+│   ├── coverage_rpt.txt                   # Coverage report (functional/code)
+│   ├── coverage.jpg                       # Visual representation of coverage
+│   └── logs                               # (contain UVM and QuestaSim log files)
 └── README.md # You’re here
 ```
 ## ⚙️ How to Run
