@@ -84,7 +84,7 @@ In the run.do file in the vlog line add
    ```bash
    git clone https://github.com/<your-username>/axi4lite_uvm_tb.git
    cd axi4lite_uvm_tb
-2. **Set the directort in Questa**
+2. **Set the directory in Questa**
 In questa change the directory you are in to the sim directory
 3. **Compile and simulate:**
 just use the run.do file
@@ -114,6 +114,7 @@ Use UVM methodology best practices
 Use assertions to catch real protocol violations in waveform-free form
 
 ## Waveforms 
+![Concurrent_Test_Ideal](https://github.com/user-attachments/assets/2354fb2e-9f60-4055-b292-84b9764dd8a5)
 
 
 ## 🛠️ To-Do
