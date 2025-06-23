@@ -140,7 +140,7 @@ Use assertions to catch real protocol violations in waveform-free form
  
 
 ## 📖 References
-AMBA AXI4-Lite Spec
+AMBA AXI4 Spec
 
 UVM User Guide
 
