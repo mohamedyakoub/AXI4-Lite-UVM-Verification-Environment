@@ -65,15 +65,33 @@ axi4lite_uvm_tb/
 │   └── logs                               # (contain UVM and QuestaSim log files)
 └── README.md # You’re here
 ```
+## **Tests:**
+I created 2 Tests 
+1. Concurrent Test: Read and Write happens at the same time randomly and nothing is controlling it
+2. Write Read Test: Write to the memory number of times then after finishing the Write sequence, Starts the Read sequence
+
+There is also a macro I added so the system can be ideal because in the tests above the system delays and valid signals were randomized so it doesnt always write and read 
+The macro holds the ready signals for the response channels to be always high, And the delays are 0.
+If you want to use the Ideal case 
+In the run.do file in the vlog line add
+```
++define+IDEAL
+```
+
 ## ⚙️ How to Run
 
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/<your-username>/axi4lite_uvm_tb.git
    cd axi4lite_uvm_tb
-2. **Compile and simulate:**
-Use your simulator of choice (QuestaSim, VCS, Xcelium, etc.)
-
+2. **Set the directort in Questa**
+In questa change the directory you are in to the sim directory
+3. **Compile and simulate:**
+just use the run.do file
+In the transcript write
+```
+do run.do
+```
 
 ## 🧠 AXI-Lite Protocol Notes
 No support for outstanding transactions
@@ -83,8 +101,6 @@ Read and write channels are fully independent
 Address and data phases may arrive in any order
 
 Handshakes follow valid/ready rule for all channels
-
-This testbench respects these constraints while also testing for misbehavior (e.g., premature data, missing response, stuck signals).
 
 ## 🚀 Goals
 Stress-test DUT with random interleaving of read/write ops
@@ -97,14 +113,15 @@ Use UVM methodology best practices
 
 Use assertions to catch real protocol violations in waveform-free form
 
+## Waveforms 
+
+
 ## 🛠️ To-Do
- Add AXI-lite burst violation checks
 
- Enhance scoreboard with backdoor memory mirroring
+ Enhance scoreboard with backdoor memory mirroring (RAL)
 
- Add corner-case regression suite
-
- Hook into GitHub Actions for CI testing
+ Inject some errors
+ 
 
 ## 📖 References
 AMBA AXI4-Lite Spec
