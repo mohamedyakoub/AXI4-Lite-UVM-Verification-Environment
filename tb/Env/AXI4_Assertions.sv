@@ -1,4 +1,4 @@
-module AXI4_Assertions#(parameter ADDR_WIDTH = 32, parameter DATA_WIDTH = 32, parameter STRB_WIDTH = 4) (
+module AXI4_Assertions#(parameter ADDR_WIDTH = 16, parameter DATA_WIDTH = 32, parameter STRB_WIDTH = 4) (
     input bit clk,
     input logic                   rst,
     // Instruction interface signals

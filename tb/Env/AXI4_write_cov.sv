@@ -13,7 +13,7 @@ class AXI4_write_cov extends uvm_subscriber#(AXI4_seq_item);
             bins special2_b = {special2}; // pattern of ones and zeros
             bins rest[4] = {[1:(max_pos-1)]};
         }	
-	// Cover that all the addresses were written in the write operation
+    // Cover that the write strobes have used all these values
         wstrb_cp : coverpoint tr.s_axil_wstrb{
             bins ALL_ONES = {4'b1111};
             bins ALL_ZEROS = {4'b0000};
@@ -21,9 +21,24 @@ class AXI4_write_cov extends uvm_subscriber#(AXI4_seq_item);
             bins two_zeros = {4'b1100, 4'b1010, 4'b1001, 4'b0110, 4'b0101, 4'b0011}; // patterns with two bits set to zero
             bins three_zeros = {4'b1000, 4'b0100, 4'b0010, 4'b0001}; // patterns with three bits set to zero
         }
+	// Cover that all the addresses were written in the write operation
         waddr_cp : coverpoint tr.s_axil_awaddr;
-       endgroup
+        
+    // Because the current design doesnt support the protection bits, we will not cover them
+        // waddr_prot_cp : coverpoint tr.s_axil_awprot[0] {
+        //     bins Unpriv = {1'b0}; // Unprivileged access
+        //     bins Priv = {1'b1}; // Privileged access
+        // }
+        // waddr_prot_cp : coverpoint tr.s_axil_awprot[1] {
+        //         bins Secure = {1'b0}; 
+        //         bins Non_Secure = {1'b1}; 
+        // }
+        // waddr_prot_cp : coverpoint tr.s_axil_awprot[2] {
+        //         bins Data = {1'b0}; 
+        //         bins Inst = {1'b1}; 
+        // }
 
+    endgroup
     function new(string name="AXI4_write_cov", uvm_component parent=null);
         super.new(name, parent);
         AXI4_write_CovGrp=new();

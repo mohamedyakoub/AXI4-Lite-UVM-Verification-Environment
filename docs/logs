@@ -1,0 +1,83 @@
+# vsim -voptargs="+acc" work.tb -coverage "+UVM_TESTNAME=AXI4_concurrent_test" -sv_seed random "+UVM_VERBOSITY=UVM_LOW" -l ../docs/logs 
+# Start time: 00:16:58 on Jun 24,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.AXI4_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.AXI4_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.AXI4_if(fast__2)
+# Loading work.axil_ram(fast)
+# Loading work.AXI4_Assertions(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# Sv_Seed = 1356382269
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test AXI4_concurrent_test...
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(45) @ 0: uvm_test_top.env.scb [AXI4_Scoreboard] axil_ram Scoreboard is running
+# UVM_INFO ../tb/Env/../Tests/Virtual_seq.sv(15) @ 0: uvm_test_top.env.virt_seqr@@vseq [AXI4_concurrent_seq] virtual_seq: Inside Body
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(27) @ 0: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(27) @ 5000: uvm_test_top.env.scb [AXI4_Scoreboard] Resetting scoreboard
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 449995000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ../tb/Env/AXI4_read_driver.sv(103) @ 449995000: uvm_test_top.env.agent.read_agent.driver [AXI4 Read Driver] *************AXI4_Read_Driver**************************
+# UVM_INFO ../tb/Env/AXI4_read_driver.sv(104) @ 449995000: uvm_test_top.env.agent.read_agent.driver [AXI4 Read Driver] Total read addresses processed: 14999
+# UVM_INFO ../tb/Env/AXI4_read_driver.sv(105) @ 449995000: uvm_test_top.env.agent.read_agent.driver [AXI4 Read Driver] ******************************************************
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(131) @ 449995000: uvm_test_top.env.agent.write_agent.driver [report_phase] *************AXI4_Write_Driver**************************
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(132) @ 449995000: uvm_test_top.env.agent.write_agent.driver [report_phase] total number of Write transactions count : 14999
+# UVM_INFO ../tb/Env/AXI4_write_driver.sv(133) @ 449995000: uvm_test_top.env.agent.write_agent.driver [report_phase] ******************************************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(111) @ 449995000: uvm_test_top.env.scb [report_phase] *************AXI4_Scoreboard**************************
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(112) @ 449995000: uvm_test_top.env.scb [report_phase] total number of transactions: 29998
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(113) @ 449995000: uvm_test_top.env.scb [report_phase] total number of read transactions: 14999
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(114) @ 449995000: uvm_test_top.env.scb [report_phase] total number of write transactions: 14999
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(116) @ 449995000: uvm_test_top.env.scb [report_phase] total succesful transactions: 14999
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(117) @ 449995000: uvm_test_top.env.scb [report_phase] total failled transactions: 0
+# UVM_INFO ../tb/Env/AXI4_scoreboard.sv(118) @ 449995000: uvm_test_top.env.scb [report_phase] ******************************************************
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   19
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AXI4 Read Driver]     3
+# [AXI4_Scoreboard]     3
+# [AXI4_concurrent_seq]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [report_phase]    10
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 449995 ns  Iteration: 79  Instance: /tb
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# Saving coverage database on exit...
+# End time: 00:18:52 on Jun 24,2025, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 00:18:52 on Jun 24,2025
+# vcover report tb.ucdb -details -annotate -all -output ../docs/coverage_rpt.txt 
+# End time: 00:18:53 on Jun 24,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

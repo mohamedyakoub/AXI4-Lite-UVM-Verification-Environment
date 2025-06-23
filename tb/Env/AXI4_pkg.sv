@@ -4,6 +4,7 @@ import uvm_pkg::*;
 `include "AXI4_seq_item.sv"
 `include "AXI4_cfg.sv"
 `include "../Tests/AXI4_seq.sv"
+`include "../Tests/AXI4_ideal_seq.sv"
 `include "AXI4_scoreboard.sv"
 `include "AXI4_read_cov.sv"
 `include "AXI4_write_cov.sv"

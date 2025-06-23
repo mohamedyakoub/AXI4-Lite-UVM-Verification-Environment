@@ -19,7 +19,7 @@ class AXI4_seq_item extends uvm_sequence_item;
     rand logic [DATA_WIDTH-1:0]  s_axil_wdata;
     rand logic [STRB_WIDTH-1:0]  s_axil_wstrb;
 
-    logic [1:0]             s_axil_bresp;
+    logic [1:0]                  s_axil_bresp;
     rand logic                   s_axil_bready;
 
     rand bit                     valid_read_address; // Indicates if the address is valid
@@ -30,13 +30,9 @@ class AXI4_seq_item extends uvm_sequence_item;
     logic [DATA_WIDTH-1:0]  s_axil_rdata;
     logic [1:0]             s_axil_rresp;
 
-    rand int r_addr_delay,
-              r_data_delay,
-              r_resp_delay; // Random delays for address, data, and response
+    rand int r_addr_delay;
     rand int w_addr_delay,
-              w_data_delay,
-              w_resp_delay; // Random delays for address, data, and response
-
+              w_data_delay;
 //---------------------------------------
   //Constructor
 //---------------------------------------
@@ -86,29 +82,23 @@ constraint addr_c {
 constraint data_c {
     s_axil_wdata dist { zeros := 20, [32'h1:special1-1] :/ 90, special1 := 20 , [special1+1:special2-1] :/ 90, special2 := 20 , [special2+1:ones-1] :/ 90, ones:=20 }; // Example distribution for data
 }
-constraint prot_c {
-    s_axil_awprot dist { 3'b000 :/ 50, 3'b001 :/ 25, 3'b010 :/ 25 }; // Example distribution for protection
-    s_axil_arprot dist { 3'b000 :/ 50, 3'b001 :/ 25, 3'b010 :/ 25 }; // Example distribution for protection
+constraint prot_c { 
+    s_axil_awprot dist { 3'b000 :/ 50, [3'b001:3'b111] :/10 }; // Example distribution for protection
+    s_axil_arprot dist { 3'b000 :/ 50, [3'b001:3'b111] :/10 }; // Example distribution for protection
 }
 constraint wstrb_c {
     s_axil_wstrb dist { 4'b1111 :/ 50, [4'b0000:4'b1110] :/ 50 }; // Example distribution for write strobe
 }
 constraint valid_signals_c {
-    valid_write_address dist { 0 :/ 10, 1 :/ 90 }; // 50% chance of valid address
-    valid_write_data dist { 0 :/ 10, 1 :/ 90 }; // 50% chance of valid data
-    valid_read_address dist { 0 :/ 10, 1 :/ 90 }; // 50% chance of valid read address
-}
-constraint ready_signals_c {
-    s_axil_bready dist { 0 :/ 30, 1 :/ 50 }; // 50% chance of ready for write response
-    s_axil_rready dist { 0 :/ 50, 1 :/ 50 }; // 50% chance of ready for read response
+    valid_write_address dist { 0 :/ 50, 1 :/ 90 };
+    valid_write_data dist { 0 :/ 50, 1 :/ 90 }; 
+    valid_read_address dist { 0 :/ 50, 1 :/ 90 }; 
 }
 
 constraint delay_c {
-    r_addr_delay dist { 0 :/ 10, [1:10] :/ 20 }; // Random delays for read address
-    r_data_delay dist { 0 :/ 10, [1:10] :/ 20 }; // Random delays for read data
-    w_addr_delay dist { 0 :/ 10, [1:10] :/ 20 }; // Random delays for write address
-    w_data_delay dist { 0 :/ 10, [1:10] :/ 20 }; // Random delays for write data
-    w_resp_delay dist { 0 :/ 10, [1:10] :/ 20 }; // Random delays for write response
+    r_addr_delay dist { 0 :/ 10, [1:10] :/ 50 }; // Random delays for read address
+    w_addr_delay dist { 0 :/ 10, [1:10] :/ 50 }; // Random delays for write address
+    w_data_delay dist { 0 :/ 10, [1:10] :/ 50 }; // Random delays for write data
 }
 //---------------------------------------
 

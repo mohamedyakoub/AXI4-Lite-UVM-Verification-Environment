@@ -15,13 +15,6 @@ class virtual_seq extends uvm_sequence #(AXI4_seq_item);
     `uvm_info(get_type_name(), "virtual_seq: Inside Body", UVM_LOW);
     write_seq = AXI4_seq::type_id::create("write_seq");
     read_seq = AXI4_seq::type_id::create("read_seq");
-    //write_read_seq = AXI4_write_read_seq::type_id::create("write_read_seq");
-    // fork  
-    // write_seq.start(p_sequencer.write_seqr);
-    // read_seq.start(p_sequencer.read_seqr);
-    // join
-
-
   endtask
 endclass
 

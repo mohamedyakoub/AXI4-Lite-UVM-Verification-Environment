@@ -33,58 +33,60 @@ class AXI4_write_driver extends uvm_driver#(AXI4_seq_item);
         vif.s_axil_awvalid <= 1'b0;
         vif.s_axil_wvalid <= 1'b0;
         vif.s_axil_bready <= 1'b0;
+        vif.s_axil_awaddr <= '0;
+        vif.s_axil_awprot <= '0;
+        vif.s_axil_wdata <= '0;
+        vif.s_axil_wstrb <= '0;
         @(posedge vif.clk);
         @(posedge vif.clk);
 
         `uvm_info("Driver", "Finished resetting driver", UVM_MEDIUM)
     endtask
 
-   
-///////////////////// I am the Master //////////////////////
-// we will have 3 semaphores
-// 1. For write operation
-// 2. For read operation
-// 3. For both read and write operation to choose which one will get the item from the sequencer first 
-///////////////////// Write Operation //////////////////////
+
 task write_operation();
 
   fork
         write_address(); // Write address
         
         write_data(); // Write data
-       
-        forever begin
-            vif.s_axil_bready <=  $urandom_range(0, 1); // Set ready for write response
-            @(posedge vif.clk); // Wait for clock edge
-            if(vif.s_axil_bvalid && vif.s_axil_bready) begin
-                write_address_done = 0; // Reset write address done flag
-                write_data_done = 0; // Reset write data done flag
-            end
-        end
+       forever begin
+           `ifdef IDEAL
+                vif.s_axil_bready <= 1'b1; // Set ready for write response in ideal mode
+            `else
+                vif.s_axil_bready <=  $urandom_range(0, 1); // Set ready for write response
+            `endif
+           @(posedge vif.clk); // Wait for clock edge
+           if(vif.s_axil_bvalid && vif.s_axil_bready) begin
+               write_address_done = 0; // Reset write address done flag
+               write_data_done = 0; // Reset write data done flag
+           end
+       end
 
   join_none
-    // Fork-Join for read address and data phases
 
 endtask : write_operation
 
 task write_address();
     forever begin
         @(posedge vif.clk); // Wait for clock edge
-        if(!write_address_done) begin
+        if(!write_address_done) begin // Waits till response is received before the next write operation
             address_item = AXI4_seq_item::type_id::create("address_item", this);
-            rw_sem.get(); // Acquire semaphore for read/write operation
+
+            rw_sem.get(); // Acquire semaphore for getting a sequence item
             seq_item_port.get_next_item(address_item);
             seq_item_port.item_done(); // Indicate that the item is done
-            rw_sem.put(); // Release semaphore for read/write operation
+            rw_sem.put(); // Release semaphore 
+            
             repeat(address_item.w_addr_delay) @(posedge vif.clk); // Random delay for address write
             `uvm_info("AXI4 Write Driver", "Writing address ", UVM_MEDIUM)
             vif.s_axil_awaddr <= address_item.s_axil_awaddr;
             vif.s_axil_awprot <= address_item.s_axil_awprot;
-            if(address_item.valid_write_address) begin
+            if(address_item.valid_write_address) begin // If the address is valid for write operation
                 write_address_done = 1; // Indicate that write address is done
                 vif.s_axil_awvalid <= 1'b1;
                 @(posedge vif.clk);
-                while(!vif.s_axil_awready) 
+                while(!vif.s_axil_awready) // Wait for ready signal to complete the handshake
                     @(posedge vif.clk);
                 vif.s_axil_awvalid <= 1'b0;
                 address_written++;
@@ -92,28 +94,29 @@ task write_address();
             end
         end
     end
-    // write_address_sem.put(); // Release semaphore for write address operation
 
 endtask : write_address
 
 task write_data();
     forever begin
         @(posedge vif.clk); // Wait for clock edge
-        if(!write_data_done) begin
+        if(!write_data_done) begin // Waits till response is received before the next write operation
             data_item = AXI4_seq_item::type_id::create("data_item", this);
-            rw_sem.get(); // Acquire semaphore for read/write operation
+
+            rw_sem.get(); // Acquire semaphore for getting a sequence item
             seq_item_port.get_next_item(data_item);
             seq_item_port.item_done(); // Indicate that the item is done
-            rw_sem.put(); // Release semaphore for read/write operation
-            repeat(data_item.w_data_delay) @(posedge vif.clk); // Random delay for data write
+            rw_sem.put(); // Release semaphore 
+
             `uvm_info("AXI4 Write Driver", "Writing data", UVM_MEDIUM)
             vif.s_axil_wdata <= data_item.s_axil_wdata;
             vif.s_axil_wstrb <= data_item.s_axil_wstrb;
-            if(data_item.valid_write_data) begin
+            repeat(data_item.w_data_delay) @(posedge vif.clk); // Random delay for data write
+            if(data_item.valid_write_data) begin    // If the data is valid for write operation
                 write_data_done = 1; // Indicate that write data is done
                 vif.s_axil_wvalid <= 1'b1;
                 @(posedge vif.clk);
-                while(!vif.s_axil_wready) 
+                while(!vif.s_axil_wready) // Wait for ready signal to complete the handshake
                     @(posedge vif.clk);
                 vif.s_axil_wvalid <= 1'b0;
                 `uvm_info("AXI4 Write Driver", "Finished writing data", UVM_MEDIUM)
@@ -126,7 +129,7 @@ endtask : write_data
  function void report_phase(uvm_phase  phase);
         super.report_phase(phase);
         `uvm_info("report_phase","*************AXI4_Write_Driver**************************",UVM_LOW)
-        `uvm_info("report_phase", $sformatf("total number of Address count : %0d", address_written),UVM_LOW)
+        `uvm_info("report_phase", $sformatf("total number of Write transactions count : %0d", address_written),UVM_LOW)
         `uvm_info("report_phase","******************************************************",UVM_LOW) 
   endfunction
 

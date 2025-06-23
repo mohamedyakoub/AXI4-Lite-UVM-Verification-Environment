@@ -15,14 +15,14 @@ class AXI4_agent extends uvm_agent;
 
   function void build_phase(uvm_phase phase);
     super.build_phase(phase);
-
-   // Retrieve Configuration
+    // Creating the read and write agents
     read_agent = AXI4_read_agent::type_id::create("read_agent", this);
     write_agent = AXI4_write_agent::type_id::create("write_agent", this);
   endfunction : build_phase
 
 
   function void connect_phase(uvm_phase phase);
+    // Connecting each agent with its corresponding port
     write_agent.write_port.connect(write_port);
     read_agent.read_port.connect(read_port);
   endfunction : connect_phase

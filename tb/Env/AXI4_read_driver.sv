@@ -2,13 +2,13 @@ class AXI4_read_driver extends uvm_driver#(AXI4_seq_item);
     `uvm_component_utils(AXI4_read_driver)
     virtual AXI4_if vif;
     AXI4_seq_item read_item;
-    semaphore read_sem,read_address_sem, read_data_sem,resp_sem;
+    semaphore read_sem,read_address_sem, resp_sem;
     bit  read_address_done;
+    int address_count;
     function new(string name="AXI4_read_driver", uvm_component parent=null);
         super.new(name, parent);
         read_sem = new(1); // Semaphore for read operation
         read_address_sem = new(1); // Semaphore for read address operation
-        read_data_sem = new(1); // Semaphore for read data operation
         resp_sem = new(1); // Semaphore for read response operation
     endfunction
 
@@ -31,7 +31,11 @@ class AXI4_read_driver extends uvm_driver#(AXI4_seq_item);
                 begin
                     resp_sem.get(); // Acquire semaphore for read response operation
                     @(posedge vif.clk); // Wait for clock edge
-                    vif.s_axil_rready <= $urandom_range(0, 1); // Set ready for read response
+                    `ifdef IDEAL
+                        vif.s_axil_rready <= 1'b1; // Set ready for read response in ideal mode
+                    `else
+                        vif.s_axil_rready <=  $urandom_range(0, 1); // Set ready for read response
+                    `endif
                     if(vif.s_axil_rvalid ) begin
                         if(vif.s_axil_rready) begin
                             read_address_done = 0; // Reset read address done flag
@@ -48,6 +52,8 @@ class AXI4_read_driver extends uvm_driver#(AXI4_seq_item);
         `uvm_info("AXI4 Read Driver", "Resetting driver", UVM_MEDIUM)
         vif.s_axil_arvalid <= 1'b0; 
         vif.s_axil_rready <= 1'b0;
+        vif.s_axil_araddr <= '0;
+        vif.s_axil_arprot <= '0;
         vif.rst <= 1'b1; // Assert reset
         @(posedge vif.clk);
         vif.rst <= 1'b0; // Deassert reset
@@ -69,15 +75,6 @@ task read_operation();
             `uvm_info("AXI4 Read Driver", $sformatf("Read item: %s", read_item.convert2string()), UVM_MEDIUM)
             read_address(read_item); // Read address
         end
-    
-        // begin
-        //     vif.s_axil_rready <= read_item.s_axil_rready; // Set ready for read response
-        //     if(vif.s_axil_rvalid & read_item.s_axil_rready) begin 
-        //         read_address_done = 0; // Reset read address done flag
-        //     end
-        // end
-        
-    
     read_sem.put(); // Release semaphore for read operation
 endtask : read_operation
 
@@ -95,12 +92,18 @@ task read_address(AXI4_seq_item read_item);
             @(posedge vif.clk);
         vif.s_axil_arvalid <= 1'b0;
         `uvm_info("AXI4 Read Driver", "Finished reading address", UVM_MEDIUM)
+        address_count++;
     end
     @(posedge vif.clk);
     read_address_sem.put(); // Release semaphore for read address operation
 endtask : read_address
 
-
+function void report_phase(uvm_phase phase);
+    super.report_phase(phase);
+    `uvm_info("AXI4 Read Driver", "*************AXI4_Read_Driver**************************", UVM_LOW)
+    `uvm_info("AXI4 Read Driver", $sformatf("Total read addresses processed: %0d", address_count), UVM_LOW)
+    `uvm_info("AXI4 Read Driver", "******************************************************", UVM_LOW)
+endfunction : report_phase
 
 endclass : AXI4_read_driver
 

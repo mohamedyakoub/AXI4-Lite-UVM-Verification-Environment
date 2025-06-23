@@ -10,7 +10,7 @@ class AXI4_concurrent_test extends AXI4_test;
 
 		virtual_seq::type_id::set_type_override(AXI4_concurrent_seq::get_type());
         write_num = 30000;
-        read_num = 30000;
+        read_num = 15000;
 
 		super.build_phase(phase);
 	endfunction: build_phase

@@ -79,8 +79,5 @@ module tb;
     uvm_config_db#(virtual AXI4_if)::set(null,"*","vif",AXI4_intf);
     run_test("");
   end
-   
-  // initial begin
-  // end
 
 endmodule

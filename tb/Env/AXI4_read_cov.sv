@@ -15,6 +15,24 @@ class AXI4_read_cov extends uvm_subscriber#(AXI4_seq_item);
         }	
 	// Cover that all the addresses were written in the write operation
         raddr_cp : coverpoint tr.s_axil_araddr;
+    
+    // Because the current design doesnt support the protection bits, we will not cover them
+        // raddr_prot_cp : coverpoint tr.s_axil_arprot[0] {
+        //     bins Unpriv = {1'b0}; // Unprivileged access
+        //     bins Priv = {1'b1}; // Privileged access
+        // }
+        // raddr_prot_cp : coverpoint tr.s_axil_arprot[1] {
+        //     bins Secure = {1'b0}; 
+        //     bins Non_Secure = {1'b1}; 
+        // }
+        // raddr_prot_cp : coverpoint tr.s_axil_arprot[2] {
+        //     bins Data = {1'b0}; 
+        //     bins Inst = {1'b1}; 
+        // }
+
+
+
+
        endgroup
 
     function new(string name="AXI4_read_cov", uvm_component parent=null);

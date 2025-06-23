@@ -6,7 +6,6 @@ class AXI4_read_monitor extends uvm_monitor;
    AXI4_seq_item read_item, addr_item, addr_queue[$];
   function new(string name, uvm_component parent);
     super.new(name, parent);
-    //txn = AXI4_seq_item::type_id::create("txn");
     mon_ap = new("mon_ap", this);
   endfunction
 
@@ -42,6 +41,8 @@ class AXI4_read_monitor extends uvm_monitor;
             addr_item = AXI4_seq_item::type_id::create("addr_item");
             addr_item.s_axil_araddr = vif.s_axil_araddr;
             addr_item.s_axil_arprot = vif.s_axil_arprot;
+            addr_item.s_axil_rready = 0;
+            mon_ap.write(addr_item);  // the read address is sent first to prepare the data that will be compared in the scoreboard before the data is received
             addr_queue.push_back(addr_item);
         end
       end
@@ -60,7 +61,8 @@ class AXI4_read_monitor extends uvm_monitor;
                 read_item.s_axil_arprot = addr_queue[0].s_axil_arprot;
                 read_item.s_axil_rdata = vif.s_axil_rdata;
                 read_item.s_axil_rresp = vif.s_axil_rresp;
-                addr_queue.pop_front();
+                read_item.s_axil_rready = vif.s_axil_rready;
+                addr_queue.delete(0); // Remove the address item after processing
                 mon_ap.write(read_item);  // Send to scoreboard or coverage collector
             end
             else begin

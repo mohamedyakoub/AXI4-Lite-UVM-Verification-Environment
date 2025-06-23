@@ -5,7 +5,6 @@ class AXI4_test extends uvm_test;
 		read_num=10000;
 
 	AXI4_enviroment env;
-	// AXI4_base_seq base_seq;
 	virtual_seq vseq;
 
 	AXI4_cfg	write_cfg,read_cfg;
@@ -15,8 +14,11 @@ class AXI4_test extends uvm_test;
 	endfunction: new
 
 	function void build_phase(uvm_phase phase);
+		`ifdef IDEAL
+			AXI4_seq::type_id::set_type_override(AXI4_ideal_seq::get_type()); // Override the base sequence type with the ideal sequence type, If you want non ideal just comment this line
+		`endif
+
 		super.build_phase(phase);
-		// base_seq = AXI4_base_seq::type_id::create("base_seq", this);
 		write_cfg = AXI4_cfg::type_id::create("write_cfg", this);
 		read_cfg = AXI4_cfg::type_id::create("read_cfg", this);
 		vseq = virtual_seq::type_id::create("vseq", this);
@@ -24,8 +26,8 @@ class AXI4_test extends uvm_test;
 
 		/////////////////////////////////////
 
-		write_cfg.inst_num=write_num;
-		read_cfg.inst_num=read_num;
+		write_cfg.trans_num=write_num;
+		read_cfg.trans_num=read_num;
 		uvm_config_db#(AXI4_cfg)::set(this, "*.write_agent*", "AXI4_cfg", write_cfg);
 		uvm_config_db#(AXI4_cfg)::set(this, "*.read_agent*", "AXI4_cfg", read_cfg);
 		/////////////////////////////////////

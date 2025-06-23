@@ -7,7 +7,6 @@ class AXI4_write_monitor extends uvm_monitor;
    AXI4_seq_item write_item, data_item, addr_item, addr_queue[$], data_queue[$];
   function new(string name, uvm_component parent);
     super.new(name, parent);
-    //txn = AXI4_seq_item::type_id::create("txn");
     mon_ap = new("mon_ap", this);
   endfunction
 
@@ -53,7 +52,7 @@ class AXI4_write_monitor extends uvm_monitor;
       if (vif.rst) begin
         data_queue.delete();  // Clear the data queue on reset
       end
-      else  // Check if reset is not asserted
+      else  
       begin
         if(vif.s_axil_wvalid && vif.s_axil_wready )
         begin
@@ -77,7 +76,7 @@ class AXI4_write_monitor extends uvm_monitor;
       else begin
         if(vif.s_axil_bvalid && vif.s_axil_bready)
         begin
-            #1;
+            #1; // Small delay to ensure that the address and data queues are updated because the current design that is being verified raises the bvalid signal with the address and data ready signals. And this is a violation of the AXI4 protocol.
             if(addr_queue.size() > 0 && data_queue.size() > 0)
             begin
               write_item = AXI4_seq_item::type_id::create("write_item");
@@ -86,9 +85,8 @@ class AXI4_write_monitor extends uvm_monitor;
               write_item.s_axil_wdata = data_queue[0].s_axil_wdata;
               write_item.s_axil_wstrb = data_queue[0].s_axil_wstrb;
               write_item.s_axil_bresp = vif.s_axil_bresp;
-              // write_queue.push_back(write_item);
-              addr_queue.pop_front();
-              data_queue.pop_front();
+              addr_queue.delete(0);  // Remove the first item from the address queue
+              data_queue.delete(0);  // Remove the first item from the data queue
               mon_ap.write(write_item);  // Send to scoreboard or coverage collector
             end
             else
