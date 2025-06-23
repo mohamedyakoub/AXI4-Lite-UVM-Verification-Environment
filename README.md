@@ -113,9 +113,24 @@ Use UVM methodology best practices
 
 Use assertions to catch real protocol violations in waveform-free form
 
-## Waveforms 
+## Waveforms and transcript
+1. Concurrent Test [Ideal]
 ![Concurrent_Test_Ideal](https://github.com/user-attachments/assets/2354fb2e-9f60-4055-b292-84b9764dd8a5)
+![Concurrent_Test_Ideal_log](https://github.com/user-attachments/assets/5a285c7a-7a71-4f46-9432-a9a0adc53d06)
+2. Concurrent Test [Non-Ideal]
+![Concurrent_Test_Non_Ideal](https://github.com/user-attachments/assets/c8020bfe-bdd7-4187-bddd-7eb6fe2087df)
+![Concurrent_Test_Non_Ideal_log](https://github.com/user-attachments/assets/11f8c094-9055-478d-bbc9-540fe92b13a9)
+3. Write Read Test [Ideal]
 
+   Write
+![Write_Ideal](https://github.com/user-attachments/assets/c34e725b-6acd-4338-904b-cfc9e626a4ca)
+   Read
+![Read_Ideal](https://github.com/user-attachments/assets/1cf9b9c2-bec2-4d9a-9ccf-c8bd94696aa9)
+
+   ![Write_Read_Ideal](https://github.com/user-attachments/assets/e59227bb-8e85-43c1-a027-8fa7046ac2f4)
+
+## Coverage 
+![coverage](https://github.com/user-attachments/assets/ad473aa4-c9be-4142-924e-63af06373800)
 
 ## 🛠️ To-Do
 
